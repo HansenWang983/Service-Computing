@@ -11,12 +11,12 @@ import (
 )
 /*================================= types =========================*/
 type selpg_args struct {
-    start_page  int
-    end_page    int
-    in_filename  string
-    page_len    int
-    form_deli   bool
-    print_dest string
+    start_page  int //起始页码
+    end_page    int //终止页码
+    in_filename  string //输入文件名
+    page_len    int //每页行数
+    form_deli   bool //是否按分页符分页
+    print_dest string //打印机目的地
 }
 
 /*================================= globals =======================*/
