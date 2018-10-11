@@ -6,7 +6,6 @@ import (
     "os"
 	"os/exec"
 	"bufio"
-	"github.com/spf13/pflag"
 	"flag"
 )
 /*================================= types =========================*/
@@ -112,9 +111,9 @@ func process_input(args *selpg_args) {
 	
 	// fmt.Printf("args=%s, num=%d\n", pflag.Args(), pflag.NArg())
 	
-	if pflag.NArg() > 0 {
+	if flag.NArg() > 0 {
 		//读输入文件
-		args.in_filename = pflag.Arg(0)
+		args.in_filename = flag.Arg(0)
 		output, err := os.Open(args.in_filename)
 		if err != nil {
 			fmt.Println(err)
