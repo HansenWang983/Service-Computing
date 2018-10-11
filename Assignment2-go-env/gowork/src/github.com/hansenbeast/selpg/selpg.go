@@ -6,7 +6,7 @@ import (
     "os"
 	"os/exec"
 	"bufio"
-	"flag"
+	flag "github.com/spf13/pflag"
 )
 /*================================= types =========================*/
 type selpg_args struct {
